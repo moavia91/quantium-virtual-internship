@@ -1,11 +1,12 @@
+# app.py
+
 import dash
-from dash import html, dcc
+from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
 
 # Load data
-
 df = pd.read_csv('/Users/muhammadmoavia/Desktop/Quantium Program/quantium-virtual-internship/final_sales.csv')
 # Convert date column to datetime
 df['date'] = pd.to_datetime(df['date'])
